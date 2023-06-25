@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 int stack[STACK_STORAGE];
 unsigned int stack_size = 0;
