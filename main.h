@@ -4,11 +4,26 @@
 /* LIBRARIES */
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /* FUNCTIONS */
 
+int main(int argc, char *argv[]);
+size_t newgetline(char **line, size_t *len_line, FILE *file);
+void exec(char *line, unsigned int nb_line);
+void push(int val, unsigned int nb_line);
+void pall();
+void pint(unsigned int nb_line);
+void pop(unsigned int nb_line);
+void swap(unsigned int nb_line);
+size_t fetch(char **buffer, size_t *len_buff, FILE *file);
 
-/* STRUCTURES */
+/* DEFINITIONS */
+#define STACK_STORAGE 1024
+extern int stack[STACK_STORAGE];
+extern unsigned int stack_size;
+
+/*STRUCTURES */
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
